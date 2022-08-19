@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized T-Shirts</title>
+  
+    <style>
+
+input:not([type=color],[type=radio]),textarea,select {
+  border: 1px solid #a4a4a4;
+  padding: 15px ;
+  border-radius: 25px;
+  width: 100%;
+  margin-bottom: 5px;
+  background: #f8f8ff;
+  
+
+
+}
+
+
+
+.button {
+    
+  background-color: #4CAF50; /* Green */
+  border-radius: 25px;
+  
+  padding: 15px 32px;
+  text-align: center;
+  border: none;
+  color: white;
+
+  
+  margin-left: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+body {
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+      }
+
+      .container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+      .centered {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  divansform: divanslate(-50%, -50%);
+}
+
+h3{
+   
+  color: aliceblue;
+  text-shadow: 1px 1px black;
+}
+.button:hover {
+    color:blue;
+}
+.formm{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+i{
+    margin-left: 80%;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/4530798/pexels-photo-4530798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Snow" style="width:1000px; height: 200px;">
+        <div class="centered">Customised T-Shirts</div>
+    </div>
+    <form class="formm">
+   
+        <div><h3 ><center>Customzing Section</center></h3></div>
+
+        <!--------------------- Tag Line ------------------------------------------>
+        <div class="submidiveset">
+        <b></b>Tagline
+        <input type="text" name="Tagline_shirt" maxlength="100" placeholder="Your shirt's tagline" required>
+        <i>(Max 100 Characters Allowed)</i>
+        
+        </div>
+        
+
+        <!--------------------------Size of Shirt----------------------------------->
+<div>
+    
+    Size of Shirt
+    
+    <select name="Size" id="Size" >
+    <option value="-1">Size:</option>
+    <option value="1">XS</option>
+    <option value="2">S</option>
+    <option value="3">M</option>
+    <option value="4">L</option>
+    <option value="5">XL</option>
+    <option value="6">XXL</option>
+    <option value="7">XXXL</option>
+    </select>
+    
+</div>
+<br>
+<div>
+<label for="colorpicker">Colour:</label>
+  <input type="color" id="colorpicker" value="#800080">
+</div>
+<br>
+<div>
+    Quantity
+    <input type="text" name="Quantity" maxlength="50" placeholder="Quantity" required>
+    <i>(Max 50 Characters Allowed)</i>
+    
+    </div>
+
+    <div>
+        Gender
+        
+        <input type="radio" name="Gender" value="Male" />
+        Male
+        <input type="radio" name="Gender" value="Female" />
+        Female
+        
+        </div>
+
+    <div>    <h3><center>Contact and Delivery Details</center></h3></div>
+
+    <div>
+        First Name
+        <input type="text" name="FirstName" maxlength="50" placeholder="John" required>
+        <i>(Max 50 Characters Allowed)</i>
+        
+        </div>
+        
+        
+        <!------------------------ Last Name --------------------------------------->
+        <div>
+        Last Name
+        <input type="text" name="LastName" maxlength="50" placeholder="Fernandes"required>
+        <i>(Max 50 Characters Allowed)</i>
+        
+        </div>
+        
+        <!-------------------------- Email ID ------------------------------------->
+        <div>
+        Email ID
+        <input type="email" name="EmailID" maxlength="100" placeholder="abc@gmail.com" required>
+        </div>
+        
+        
+        
+        <!-------------------------- Mobile Number ------------------------------------->
+        <div>
+        Mobile Number
+        
+           <input type="text" name="MobileNumber" maxlength="10" placeholder="1234xxxxxx" required>
+           <i>(Max 10 digits allowed)</i>
+        
+        </div>
+
+        <!------------------------- Address ---------------------------------->
+<div>
+    Address<br /><br /><br />
+    <textarea name="Address" rows="10" cols="50"></textarea>
+    </div>
+    
+    <!-------------------------- City ------------------------------------->
+    <div>
+    City
+    <input type="text" name="City" maxlength="50" placeholder="Bangalore"/>
+    <i>(Max 50 Characters Allowed)</i>
+    
+    </div>
+    
+    
+    
+    <!----- -------------------- Pin Code-------------------------------------->
+    <div>
+    Pin Code
+    <input type="text" name="PinCode" maxlength="6" placeholder="560068"/>
+    <i>(Max 6 Characters Allowed)</i>
+    
+    </div>
+    
+    
+    
+    <!---------------------------- State ----------------------------------->
+    <div>
+    State
+    
+        <select name="Size" id="Size">
+        <option value="-1">State</option>
+        <option value="1">Maharashdiva</option>
+        <option value="2">Uttar Pradesh</option>
+        <option value="3">Gujrat</option>
+        <option value="3">Goa</option>
+
+        <option value="3">Punjab</option>
+
+        </select>
+        
+    </div>
+   
+    <div>
+        Delivery needed by
+
+    <input type="date" id="Date" name="Date">
+
+</div>
+
+<br>
+<div>
+    Mode of Payment
+    
+    <input type="radio" name="Mode" value="COD" />
+    COD
+    <input type="radio" name="Mode" value="Online" />
+    Online
+    
+    </div>
+<br>
+    <div>
+        This order contains a gift
+        
+        <input type="radio" name="Mode" value="COD" />
+        Yes
+        <input type="radio" name="Mode" value="Online" />
+        No
+        
+        </div>
+
+
+   
+          
+       
+        </form>
+        <button class="button" type="submit" >Submit</button>
+</body>
+</html>
